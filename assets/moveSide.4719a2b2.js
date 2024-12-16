@@ -1,0 +1,1 @@
+function g(i){const e=i,o=e.getBoundingClientRect(),s=Math.floor(o.width/2);let t=0,n=0;function r(l){n=l.target.scrollLeft}e.addEventListener("scroll",r,!1);function d(l){const c=l.getBoundingClientRect(),f=c.left-o.left+c.width/2;t=n+(f-s),t<0&&(t=0),e.scrollLeft=t}return d}export{g as m};
